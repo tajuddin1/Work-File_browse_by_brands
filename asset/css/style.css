@@ -4,12 +4,114 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+}
 .container{
     width: 1600px;
     margin: auto;
 }
-.top_title h1{
+
+.top_bar_title h1{
+    font-size: 36px;
     text-align: center;
+    font-weight: 100;
+    color: #211E22;
+    margin-bottom: 20px;
+}
+.brands_header_row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+a.brands_nav_tab {
+    padding: 10px 15px;
+    border-bottom: 2px solid #ddd;
+    text-decoration: none;
+    color: #211E22;
+}
+a.brands_nav_tab:hover{
+    border-bottom: 2px solid #333333;
+}
+
+a.brands_nav_tab span {
+    font-size: 18px;
+}
+.featured_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.featured_col {
+    flex-basis: 50%;
+}
+.featured_col2 {
+    flex-basis: 25%;
+}
+
+.top_image_wrapper {
+    margin: 0 7px;
+}
+.featured_col2 .top_image_wrapper{
+    margin: 0 4px;
+}
+.featured_col2 .left_logo {
+    max-width: 208px;
+}
+.bottom_info {
+    display: flex;
+    justify-content: center;
+}
+
+a.bottom_info_wp {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: #787779;
+}
+
+.logo_desc {
+    max-width: 240px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.left_logo {
+    max-width: 125px;
+}
+
+.logo_brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.brand_wraper_bb {
+    flex-basis: 16.66%;
+}
+.top_title h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 100;
+    color: #211E22;
+    font-size: 24px;
+}
+.top_title{
+    padding-top: 80px;
+}
+.brands_header {
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
 }
 .tab{
     display: flex;
@@ -67,8 +169,90 @@
     width: 100%;
     color: #4d4a4f;
     font-size: 18px;
+    text-decoration: underline;
 }
 .brand_link a:hover{
     text-decoration: none;
     color: #707070;
+}
+.image_wrapper {
+    display: flex;
+    max-width: 180px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .container {
+        max-width: 95%;
+        margin: auto;
+    }
+    
+}
+@media only screen and (max-width: 1024px) {
+    .top_bar_title h1{
+        font-size: 28px;
+    }
+    .featured_col2 .left_logo {
+        max-width: 170px;
+    }
+    .image_wrapper {
+        max-width: 120px;
+    }
+    .left_logo {
+        max-width: 80px;
+    }
+    .logo_desc {
+        font-size: 16px;
+    }
+    .top_title h1 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top_bar_title h1{
+        font-size: 24px;
+    }
+    .top_title{
+        padding-top: 30px;
+    }
+    .logo_desc {
+        font-size: 12px;
+        max-width: 160px;
+    }
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 600px) {
+    a.bottom_info_wp{
+        gap: 05px;
+    }
+    .top_title h1 {
+        font-size: 18px;
+    }
+    a.brands_nav_tab {
+        padding: 6px 8px;
+        border-bottom: 2px solid #ddd;
+        text-decoration: none;
+        color: #211E22;
+    }
+    a.brands_nav_tab span {
+        font-size: 12px;
+    }
+    .tablinks {
+        font-size: 14px;
+    }
+    .tab {
+        padding: 0 15px;
+    }
+    .brand_link a {
+        font-size: 14px;
+    }
+    .brand_col {
+        flex-basis: 33%;
+    }
 }
