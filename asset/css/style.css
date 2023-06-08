@@ -9,6 +9,7 @@ html{
 }
 img{
     width: 100%;
+    height: 100%;
 }
 .container{
     width: 1600px;
@@ -185,6 +186,26 @@ a.bottom_info_wp {
 }
 
 
+.content-row{
+    display: flex;
+}
+.brand_wrapper {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.brands {
+    width: 11%;
+    box-shadow: 3px 3px 10px 0px #303030a8;
+    transition: 0.3s ease;
+}
+
+.brands:hover {
+    scale: 1.1;
+}
 @media only screen and (max-width: 1440px) {
     .container {
         max-width: 95%;
@@ -211,6 +232,9 @@ a.bottom_info_wp {
     .top_title h1 {
         font-size: 20px;
     }
+    .brands {
+        width: 16%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -223,6 +247,7 @@ a.bottom_info_wp {
     .logo_desc {
         font-size: 12px;
         max-width: 160px;
+        line-height: 15px;
     }
 }
 
@@ -254,5 +279,8 @@ a.bottom_info_wp {
     }
     .brand_col {
         flex-basis: 33%;
+    }
+    .brands {
+        width: 20%;
     }
 }
