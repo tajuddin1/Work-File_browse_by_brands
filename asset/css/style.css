@@ -64,6 +64,7 @@ a.brands_nav_tab span {
 }
 .featured_col2 .left_logo {
     max-width: 208px;
+    max-height: 65px;
 }
 .bottom_info {
     display: flex;
