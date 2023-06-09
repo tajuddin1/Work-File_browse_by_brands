@@ -70,9 +70,11 @@ a.brands_nav_tab span {
     justify-content: center;
 }
 .bottom_info h4 {
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 22px;
+    font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    color: #575757;
 }
 a.bottom_info_wp {
     display: flex;
@@ -207,6 +209,12 @@ a.bottom_info_wp {
     box-shadow: 3px 3px 10px 0px #303030a8;
     transition: 0.3s ease;
 }
+.top_image_wrapper>a>img {
+    transition: 0.3s ease;
+}
+.top_image_wrapper:hover img {
+    scale: 1.03;
+}
 
 .brands:hover {
     scale: 1.1;
@@ -287,5 +295,9 @@ a.bottom_info_wp {
     }
     .brands {
         width: 20%;
+    }
+    .bottom_info h4 {
+        font-size: 12px;
+        margin-top: 2px;
     }
 }
